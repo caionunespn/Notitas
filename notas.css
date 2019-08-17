@@ -1,0 +1,228 @@
+.bottoes{
+	font-size: 28px;
+	font-weight: 800;
+	height:60px;
+	width:60px;
+	box-sizing: border-box;
+    background-position: center;
+    border-radius: 18px;
+	cursor:url(image/cursor.png),auto;
+}
+.bottoes:active{
+	cursor:url(image/cursorClick.png),auto;
+}
+
+.bottoes:hover {
+	transform: scale(1.08);
+}
+
+.selecionado {
+	color: white;
+}
+
+.bottoes.tocando {
+	
+}
+
+.bottoes.tocando.selecionado {
+	transform: scale(1.24);
+	z-index: 1000;
+	border: 0;
+	text-shadow: 0 0 30px #fff;
+}
+
+.do {
+	background-color: #804200;
+}
+
+.re {
+	background-color: #696a05;
+}
+
+.mi {
+	background-color: #357235;
+}
+
+.fa {
+	background-color: #005b80;
+}
+
+.sol {
+	font-size: 22px;
+	background-color: #504180;
+}
+
+.la {
+	background-color: #804f80;
+}
+
+.si {
+	background-color: #802f38;
+}
+
+
+.do.selecionado {
+	background-color: #ff8300;
+
+}
+
+.re.selecionado {
+	background-color: #d2d310;
+
+}
+
+.mi.selecionado {
+	background-color: #5edb5e;
+	
+}
+
+.fa.selecionado {
+	background-color: #01b6ff;
+
+}
+
+.sol.selecionado {
+	background-color: #9f82ff;
+
+}
+
+.la.selecionado {
+	background-color: #ff9dff;
+
+}
+
+.si.selecionado {
+	background-color: #ff5d6f;
+
+}
+
+.do.tocando {
+	
+	transform: scale(1.1);
+}
+
+.re.tocando {
+	
+	transform: scale(1.1);
+}
+
+.mi.tocando {
+	
+	transform: scale(1.1);
+}
+
+.fa.tocando {
+	
+	transform: scale(1.1);
+}
+
+.sol.tocando {
+	
+	transform: scale(1.1);
+}
+
+.la.tocando {
+	
+	transform: scale(1.1);
+}
+
+.si.tocando {
+	
+	transform: scale(1.1);
+}
+
+
+.do.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #ff8300;
+
+}
+
+.re.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #d2d310;
+
+}
+
+.mi.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #5edb5e;
+	
+}
+
+.fa.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #01b6ff;
+
+}
+
+.sol.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #9f82ff;
+
+}
+
+.la.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #ff9dff;
+
+}
+
+.si.tocando.selecionado {
+	box-shadow: 0 0 20px 5px #ff5d6f;
+
+}
+
+
+.do.bateria {
+	background-image: url(image/bateria/7_1.png);
+}
+
+.re.bateria {
+	background-image: url(image/bateria/6_1.png);
+}
+
+.mi.bateria {
+	background-image: url(image/bateria/5_1.png);
+}
+
+.fa.bateria {
+	background-image: url(image/bateria/4_1.png);
+}
+
+.sol.bateria {
+	background-image: url(image/bateria/3_1.png);
+}
+
+.la.bateria {
+	background-image: url(image/bateria/2_1.png);
+}
+
+.si.bateria {
+	background-image: url(image/bateria/1_1.png);
+}
+.bateria {
+	color: rgba(0,0,0,0);
+}
+
+.do.bateria.selecionado {
+	background-image: url(image/bateria/7_2.png);
+}
+
+.re.bateria.selecionado {
+	background-image: url(image/bateria/6_2.png);
+}
+
+.mi.bateria.selecionado {
+	background-image: url(image/bateria/5_2.png);
+}
+
+.fa.bateria.selecionado {
+	background-image: url(image/bateria/4_2.png);
+}
+
+.sol.bateria.selecionado {
+	background-image: url(image/bateria/3_2.png);
+}
+
+.la.bateria.selecionado {
+	background-image: url(image/bateria/2_2.png);
+}
+
+.si.bateria.selecionado {
+	background-image: url(image/bateria/1_2.png);
+}

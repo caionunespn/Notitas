@@ -1,0 +1,321 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* RESET BUTTON */
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+}
+
+/* POSICIONAMENTO DO CANVAS */
+canvas {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#container{
+	white-space: nowrap;
+    overflow-x: scroll;
+    display: none;
+    left: calc(50% - 570px);
+	top:105;
+    cursor:url(image/cursor.png),auto;
+    width: 820px;
+    height:550px;
+    position: absolute;
+	z-index: 997;
+}
+
+#linha {
+	height: 100%;
+	width: 5px;
+	background-color: black;
+	z-index: 998;
+	
+}
+
+
+/* POPUP */
+.modal.invisible {
+    opacity: 0;
+    top: -25%;
+}
+
+.modal {
+    z-index: 999;
+    height: 280px;
+	width: 384px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    box-shadow: 0 0 100px 5000px rgba(0,0,0,.7);
+	border-radius: 30px;
+    padding: 1rem 2rem;
+    transition: opacity .6s, top .7s;
+    background-color: #dbd3cf;
+}
+
+
+.btn.cancel {
+    height: 36px;
+	width: 36px;
+	border-radius: 30px;
+	position: absolute;
+    top: 7px;
+    right: 7px;
+    background-image: url(image/popup/FECHAR1.png);
+}
+
+.btn.cancel:hover {
+  background-image: url(image/popup/FECHAR2.png);
+}
+
+/* SALVAR */
+
+#salvar {
+	height: 250px;
+}
+
+#salvar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#salvar form h2 {
+  margin-bottom: .5em;
+  font-size: 30px;
+}
+
+#nome {
+	box-sizing: border-box;
+	padding: 1em;
+	width: 94%;
+	height: 65px;
+	border-radius: 26px;
+	font-size: 20px;
+    margin-bottom: 2em;
+}
+
+
+#btn-submit {
+	background-image: url(image/popup/Salvar1.png);
+  margin-bottom: 1em;
+  height: 45px;
+  width: 146px;
+}
+
+#btn-submit:hover {
+	background-image: url(image/popup/Salvar2.png);
+}
+
+#btn-export {
+	background-image: url(image/popup/Exportar1.png);
+	width: 145px;
+    height: 32px;
+}
+#btn-export:hover {
+	background-image: url(image/popup/Exportar2.png);
+  width: 147px;
+  height: 32px;
+}
+
+
+/* Tabela ABRIR */
+#abrir {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+.table-scroll {
+  position: relative;
+  overflow-y: scroll;
+  height: 280px;
+  background-color: #fff;
+  width: 384px;
+}
+
+.table-wrapper {
+  position: relative;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #ADA7A4;
+  width: 384px;
+  display: block;
+}
+
+th:first-child, td:first-child {
+  width: 192px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 82px;
+  text-align: center;
+}
+
+td:nth-child(3) {
+  width: 93px;
+  text-align: center;
+}
+
+th,td {
+  padding: 5px 1em 0 1em;
+  box-sizing: border-box;
+}
+
+thead tr {
+	border: 0;
+}
+
+th:first-child, td:first-child {
+  border-left: 0;
+}
+
+.btn-abrir, .btn-excluir {
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.btn-abrir {
+  background-image: url(image/popup/ABRIR.png)
+}
+
+.btn-abrir:hover {
+  background-image: url(image/popup/Abrir2.png)
+}
+
+.btn-excluir {
+  background-image: url(image/popup/EXCLUIR.png);
+}
+
+.btn-excluir:hover {
+  background-image: url(image/popup/EXCLUIR2.png);
+}
+
+/* ESCOLHER ANIMAL */
+#escolhe-animal {
+  width: 290px;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#escolhe-animal div {
+  background-color: white;
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin: .2em 0 0 0;
+  font-size: 30px;
+}
+
+#animal-atual {
+
+}
+#tutorial{
+	height:610px;
+	width:1136px;
+	left: calc(50% - 560px);
+	top:60;
+	white-space: nowrap;
+    display: none;
+    position:absolute;
+	z-index:999;
+	background-color: #000000;
+}
+#btn-entra-editor {
+  background-image: url(image/popup/Comecar1.png);
+  border-radius: 20px;
+  height: 47px;
+  width: 200px;
+}
+
+#btn-entra-editor:hover {
+  background-image: url(image/popup/Comecar2.png);
+}
+
+.btn-animal {
+  height: 80px;
+  width: 80px;
+}
+
+/* CONFIRM */
+
+.confirm {
+  height: 150px;
+  width: 360px;
+}
+
+.confirm div {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.confirm-sim, .confirm-nao {
+  font-size: 22px;
+  width: 80px;
+  height: 40px;
+  border-radius: 17px;
+}
+
+#confirm-exclusao {
+	height: 120px;
+}
+
+#confirm-exclusao .confirm-sim, #confirm-exclusao .confirm-nao {
+	position: relative;
+	top: 10px;
+}
+
+.confirm-sim {
+  background-color: #74e674;
+}
+
+.confirm-nao {
+  background-color: #ff5f71;
+}
+
+.confirm-sim:hover, .confirm-nao:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #fff;
+}
+
+
+/*
+http://www.iconarchive.com/show/ios7-icons-by-icons8/Animals-Turtle-icon.html
+https://www.iconfinder.com/icons/403404/animal_cuddly_cute_guinea_pig_hamster_mouse_pet_icon
+https://icon-icons.com/es/icono/corriendo-conejo-animal/5263
+*/

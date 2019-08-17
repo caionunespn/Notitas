@@ -1,0 +1,108 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800" rel="stylesheet">
+    <script src="scripts/p5.js"></script>
+    <script src="scripts/animal.js"></script>
+    <script src="scripts/crunker.js"></script>  
+    <script src="scripts/howler.js"></script>
+    <script src="scripts/p5.dom.js"></script>
+    <script src="scripts/botoes.js"></script>
+    <script src="scripts/botoesNotas.js"></script>
+    <script src="scripts/instrumentos.js"></script>
+    <script src="scripts/Slider.js"></script>
+    <script src="scripts/notas.js"></script>
+    <script src="scripts/interface.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/codigo.js"></script>
+    <link rel="stylesheet" href="styles.css">
+	  <link rel="stylesheet" href="notas.css">
+  </head>
+  <body>
+      <div id="escolhe-animal" class="modal invisible">
+        
+        <h2>ESCOLHA UM PET</h2>
+        <div>
+          <img id="animal-atual" src="image/popup/Lion.png">
+        </div>
+        
+      <div class="div-selecao">
+        <img class="btn-animal" id="selecao-uni" onclick="mudaEstado(2)" src="image/popup/UNI2.png">
+        <img class="btn-animal" id="selecao-leao" onclick="mudaEstado(1)" src="image/popup/Lion1.png">
+        <img class="btn-animal" id="selecao-lobo" onclick="mudaEstado(0)" src="image/popup/Lobo2.png">
+      </div>
+
+		  
+		  
+		  <button id="btn-entra-editor" onclick="entraEditor()"></button>
+          <button class="cancel btn" onclick="fechaEscolha()"></button>
+      
+      </div>
+
+      <div id="salvar" class="modal invisible">
+          <form>
+              <h2>NOME DO PROJETO</h2>
+			  <input id="nome" name="nome" type="text" required minlength="4">
+			  <button class="btn" type="submit" id="btn-submit"></button>
+          </form>
+          <div id="cancel-salvar" class="cancel btn"></div>
+      
+      </div>
+	  
+	  <div id="abrir" class="modal invisible">
+		  <h2>ESCOLHA UM PROJETO</h2>
+        
+        <div class="table-wrapper">
+			<table>
+			  <thead>
+					  <tr>
+						<th>NOME</th>
+						<th>ABRIR</th>
+						<th>EXCLUIR</th>
+					  </tr>
+			  </thead>
+			</table>
+          <div class="table-scroll">
+            <table >
+
+                <tbody id="lista">
+                </tbody>
+            </table >
+          </div>
+        </div>
+          
+          <div id="cancel-abrir" class="cancel btn"></div>
+      
+      </div>
+	  
+	  <div id="confirm" class="confirm modal invisible">
+		  
+		  <h2>DESEJA APAGAR AS NOTAS SELECIONADAS?</h2>
+        
+          <div>
+            <button id="btn-sim" class="confirm-sim">SIM</button>
+
+            <button id="btn-nao" class="confirm-nao">NÃO</button>
+          </div>
+      
+      </div>
+	  
+	  <div id="confirm-exclusao" class="confirm modal invisible">
+		  
+		  <h2>DESEJA EXCLUIR O PROJETO?</h2>
+        
+          <div>
+            <button id="btn-excluir" class="confirm-sim">SIM</button>
+
+            <button id="btn-nao-excluir" class="confirm-nao">NÃO</button>
+          </div>
+      
+      </div>
+	  
+      <div id='container'></div>
+      <div id="tutorial"></div>
+      <script src="scripts/salvar.js"></script>
+	  <script src="scripts/abrir.js"></script>
+      <script src="scripts/escolhe-animal.js"></script>
+  </body>
+</html>
